@@ -1,4 +1,4 @@
-# Market Regime Detection — Student-t HMM with Time-Varying Transition Probabilities
+# Technical Notes on Market Regime Detection — Student-t HMM with Time-Varying Transition Probabilities
 
 A from-scratch implementation of a three-state Hidden Markov Model fitted on SPY daily log-returns (2000–2015 in-sample), with a fully out-of-sample evaluation period (2016–present). The model detects **Crisis**, **Neutral**, and **Bull** market regimes using two statistically motivated departures from the textbook HMM: Student-t emission distributions and time-varying transition probabilities driven by realised volatility. The OOS section documents the failure modes encountered when naively applying an IS-trained model to post-2015 data, and the principled fixes applied to each one.
 
